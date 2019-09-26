@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo</title>
+  <link href="./main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h1>Tweets</h1>
+
+    <button id="btnAdd" class="col-2">Agregar</button>
+    <button id="btnClear" class="col-2">Limpiar</button>
+    <br><br>
+    <label for="dropNumTweets">Tweets por página</label>
+    <select id="dropNumTweets">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+    </select>
+    <br><br>
+    <div id="divTweets">
+      <div id="loading">Loading...</div>
+      <span id="numPag"></span>
+      <ul id="listTweets">
+      </ul>
+
+    </div>
+
+    <h2>Detalles</h2>
+    <div id="divDetalles">
+      <div>Nombre: <span id="valNombre"></span></div>
+      <div>Lugar: <span id="valLugar"></span></div>
+      <div>Hora: <span id="valHora"></span></div>
+
+    </div>
+
+    <script src="./scripts/main.js"></script>
+  </div>
+</body>
+</html>

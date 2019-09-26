@@ -1,0 +1,11 @@
+#btnAdd {
+  background-color: limegreen
+}
+
+#btnClear {
+  background-color: red
+}
+
+#divTweets li {
+  font-size: 10pt
+}
